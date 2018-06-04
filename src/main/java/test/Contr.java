@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 @RestController
 public class Contr {
+	
+	
+
+	
 	@RequestMapping("/index")
 	public String index() {
 		// TODO Auto-generated method stub
