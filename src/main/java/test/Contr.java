@@ -1,10 +1,13 @@
 package test;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import entity.User;
 import service.UserService;
 
 @EnableAutoConfiguration
@@ -25,6 +28,15 @@ public class Contr {
 			}
 		}
 		// TODO Auto-generated method stub
+		System.out.println("、");
+		return "MyHtml";
+	}
+	@RequestMapping("/home")
+	public String home() {
+		List<User> users=user.getAlls();
+		for (User user : users) {
+			System.out.println(user.getB_id()+"\t"+user.getB_name());
+		}
 		System.out.println("、");
 		return "MyHtml";
 	}
