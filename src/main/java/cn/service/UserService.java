@@ -1,4 +1,4 @@
-package service;
+package cn.service;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import entity.User;
+import cn.entity.User;
 
 @Service
 public class UserService {

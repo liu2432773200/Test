@@ -1,4 +1,4 @@
-package entity;
+package cn.entity;
 
 public class User {
 	private int b_id;
